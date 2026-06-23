@@ -92,5 +92,17 @@ def on_mount(self) -> None:
     self.query_one("#cmd-input").focus()
 
 def render_map(self) -> None:
-    self.render_map()
-    self.query_one(#cmd-input)
+    """Actually it draws the combined frame of game map and the player cube"""
+    display_lines = []
+    
+
+    for y,line in enumerate(self.LEVEL_MAP):
+        render_line = ""
+        for x, char in enumerate(line):
+            #what it basically does is it checks if the current occupying this tile frame coordinates
+            if x == self.player_x and y == self.player_y:
+                render_line += "[b][yellow]■[/][/]"#geometry dash player inspiration hehe actiually a excuse so i dont need to make hard characters
+            else:
+                if char == "#":
+                    render_line += "[white]█[/]"#solid block 
+        
