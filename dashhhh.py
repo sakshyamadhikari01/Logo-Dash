@@ -105,4 +105,46 @@ def render_map(self) -> None:
             else:
                 if char == "#":
                     render_line += "[white]█[/]"#solid block 
-        
+                    elif char == "^":
+render_line += "[red]▲[/]"#dripstone danger
+else:
+render_line += " "# emply space to symbolize emptiness of sky, could become a poet hehe
+display_line.append(render_line)
+#now to push the raw construced text blocks into our display engine container
+self.query_one("#screen-render", Static).update("\n".join(display_lines))
+
+def watch_player_x(self, old:int,new:int) -> None:\
+self.render_map()
+    
+def watch_player_y(self, old:int,new:int) -> None:
+    self.render_map()
+
+def watch_console_msg(self, old:str,new:str) -> f"> {msg}")
+    
+    def action_reset(self) -> None:
+        """Instant restoration of player back to the starting position"""
+        self.player_x = 2
+        self.player_y = 9
+        self.console_msg = "game reset. Try planning ur movements kiddo"
+
+        def check_collisions(self) -> None:
+            """Evaluation if player hits safe place or wall or a drippystone"""
+        #check check not mic but boundaries
+         if self.player_x < 0: self.player_x = 0
+        if self.player_x >= self.MAP_WIDTH: self.player_x = self.MAP_WIDTH -1 
+
+        #pull map block type at our specific geometric location coordinates
+        current_tile = self.LEVEL_MAP [self.player_y][self.player_x]
+
+        if current_title == "^":
+            self.console_msg = "[blink [red]CRASHED! Run 'r' or press R key to reset.[/]"
+            self.notify("You exploded",severity = "error")
+        elif current_tile == "#":
+            #IF it is inside a solid block, it will push them up out of it 
+            self.player_y -= 1
+            self.console_msg = "blocked by terrain feature"
+
+            def execute_command(self, raw_cmd: str) -> None:
+                """to use MS-LOGO style terminal movement"""
+                parts = raw_cmd.strip().lower().split()
+         
