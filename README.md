@@ -5,3 +5,27 @@ I got inspiration of this game form the games i used to play a long before like 
 dash ofc to reduce the complexity. Oh yea i used concept from old days ms logo, sheesh brings back memory from 5th grade in computer lab. I used commands like fd, jp and since like im using concept from 
 games like minecraft and geometry dash i used system of blocks for measurement like fd 3 makes it moves 3 blocks. 
 
+# Ai Usage
+AI was used duing debugging and adding the special character
+
+
+## Preview
+<img width="1888" height="560" alt="image" src="https://github.com/user-attachments/assets/122828f1-5662-49f6-a4a3-8849b8b5fc7f" />
+<img width="1845" height="593" alt="image" src="https://github.com/user-attachments/assets/6f1f1304-044a-40ad-a5a4-6835f829d06a" />
+
+
+# How to open
+After installing the python file do 
+pip install textual
+
+after that do 
+python dashhhh.py
+
+after that the game will be open
+
+
+# How to play
+-> fd for forward and ' fd 5 ' command moves player 5 blocks 
+-> jp does jump so whenever u see a spike or dripstone use jp command to jump
+
+
