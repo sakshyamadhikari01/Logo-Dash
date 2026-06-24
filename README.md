@@ -16,9 +16,11 @@ AI was used duing debugging and adding the special character
 
 # How to open
 After installing the python file do 
+your-command-here
 pip install textual
 
 after that do 
+your-command-here
 python dashhhh.py
 
 after that the game will be open
