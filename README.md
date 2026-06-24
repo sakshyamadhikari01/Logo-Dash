@@ -1,4 +1,4 @@
-# Logo Dash
+# Logo Dash V.1.1
 This is a game i made using python using textual library. 
 # Inspiration
 I got inspiration of this game form the games i used to play a long before like mario, geometry dash, minecraft etc. This game is made for terminal and it works like mario and has character from geometry 
@@ -6,7 +6,9 @@ dash ofc to reduce the complexity. Oh yea i used concept from old days ms logo, 
 games like minecraft and geometry dash i used system of blocks for measurement like fd 3 makes it moves 3 blocks. 
 
 # Ai Usage
-AI was used duing debugging and adding the special character
+AI was used duing debugging and adding the special character like blocks and spikes
+
+Insted of AI i rather used textual library docs for help. It helped me a lot 
 
 
 ## Preview
@@ -16,11 +18,15 @@ AI was used duing debugging and adding the special character
 
 # How to open
 After installing the python file do 
+your-command-here
+```
 pip install textual
+```
 
 after that do 
+```
 python dashhhh.py
-
+```
 after that the game will be open
 
 
